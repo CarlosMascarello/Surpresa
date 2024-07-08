@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .secret {
+    color: lightgoldenrodyellow;
+  }
+
+  .titulo {
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center; 
+    color: darkgoldenrod;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 1.5cm;
+  }
+
+  .nomes {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .hidden {
+    color: lightgoldenrodyellow;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #e1b909;
+    height: 8vh;
+  }
+  
+  main {
+    margin: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow ;
+    background-size: cover;
+  }
+
+  .sans {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fotos {
+    /*max-height: 200px;*/
+    height: 300px;
+  }
+  
+  .friends, .eu {
+    display: flex;
+    margin-bottom: 70px;
+    margin-top: 0px;
+    margin-left: 125px;
+    margin-right: 100px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #e1b909;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
