@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center; 
     margin-top: 20px;
-    color: rgb(4, 146, 115);
+    color: rgb(73, 30, 194);
   }
 
   p {
@@ -55,17 +55,25 @@
     opacity: 1;
   }
 
+  .text {
+    display: flex;
+    margin-right: 100px;
+  }
+  
+  .fotos {
+    height: 300px;
+  }
+
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: rgb(1, 56, 8);
+    background: rgb(34, 128, 205);
     height: 8vh;
   }
   
   main {
-    background-size: cover;
     height: 92vh;
   }
   
@@ -102,7 +110,7 @@
       right: 0;
       width: 50vw;
       height: 92vh;
-      background: rgb(1, 56, 8);
+      background: rgb(34, 128, 205);
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
